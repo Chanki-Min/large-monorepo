@@ -2,18 +2,21 @@
   "extends": "nx/presets/npm.json",
   "tasksRunnerOptions": {
     "default": {
-      "runner": "nx/tasks-runners/default",
+      "runner": "nx-cloud",
       "options": {
         "cacheableOperations": [
           "build"
         ],
-        "parallel": 3
+        "parallel": 3,
+        "accessToken": "ZDg1YzU1ZjctZTZjOS00YjE0LWFjMzEtNjI1NWRiNTQ5ZDE2fHJlYWQtd3JpdGU="
       }
     }
   },
   "targetDefaults": {
     "build": {
-      "outputs": ["{projectRoot}/.next"]
+      "outputs": [
+        "{projectRoot}/.next"
+      ]
     }
   }
 }
